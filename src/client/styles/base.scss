@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex:auto;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+}
+.main-content{
+    border: 2px black solid;
+}
+.result{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.analysis{
+        font-size: 20px;
+        text-align: left;
+        color: #000000;
+}

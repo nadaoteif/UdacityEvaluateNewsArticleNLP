@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>News Article Evaluation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>Evaluating a news article with NLP</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <form>
+                <label for="url">Enter a URL of an article : </label>
+                <input type="text" id="url" name="url">
+                <div id="err"></div><br>
+                <button type="button" name="" value="submit" onclick="return Client.handleSubmit(event)">Submit</button>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="result"> Evaluation Results</h2>
+            <div class="analysis">
+                <div id="model"></div>
+                <div id="score_tag"></div>
+                <div id="agreement"></div>
+                <div id="subjectivity"></div>
+                <div id="confidence"></div>
+                <div id="irony"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer> <p>Created by Nada Oteif | Udacity 2021</p> </footer>
+    
+    <script>
+           if ('serviceWorker' in navigator) {
+               window.addEventListener('load', () => {
+                   navigator.serviceWorker.register('/service-worker.js');
+               });
+           }  
+    </script>
+    
+</body>
+
+</html>
