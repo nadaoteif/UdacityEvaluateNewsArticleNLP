@@ -26,4 +26,3 @@ and meaningcloud Sentiment Analysi API
     "webpack-merge": "^5.7.3",
     "workbox-webpack-plugin": "^6.1.1"
   }
-
